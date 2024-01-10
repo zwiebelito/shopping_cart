@@ -1,0 +1,44 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 2px 4px 0px #0000000D;
+    box-shadow: 0px 4px 12px 0px #00000012;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+.info {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000E5;
+    margin-left: 20px;
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.first, .second {
+    color: #3B71CA;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+
+.first {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.second {
+    font-size: 12px;
+    font-weight: 500;
+}

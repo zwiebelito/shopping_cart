@@ -1,0 +1,239 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+    height: fit-content;
+    min-height: 91vh;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 ;
+}
+
+.cart, .summary {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px -2px #0000000A;
+    box-shadow: 0px 2px 15px -3px #00000012;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.cart {
+    width: 880px;
+    margin-bottom: 40px;
+}
+
+.summary{
+    position: sticky;
+    width: 400px;
+    top: 80px;
+}
+
+.stripe, .stripe1 {
+    width: 100%;
+    background: #4F4F4F;
+    height: 1px;
+    opacity: 25%;
+}
+
+.stripe1{
+    margin-bottom: 50px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 24px 12px;
+}
+
+.product img {
+    width: 180px;
+    height: 200px;
+}
+
+.heading, .empty {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4F4F4F;
+    margin-left: 24px;
+}
+
+.info {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+    width: 345px;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px 9px -4px #3B71CA;
+    background: #3B71CA;
+    transition: ease-out 0.3s;
+}
+
+.delete:hover{
+    transition: ease-out 0.3s;
+    background-color: rgba(173, 0, 8, 0.76);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap1 {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.wrap2 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4F4F4F;
+}
+
+.buttons {
+    width: 42px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background: #3B71CA;
+    box-shadow: 0 4px 9px -4px #3B71CA;
+    transition: ease-out 0.3s;
+}
+
+.buttons:hover{
+    transition: ease-out 0.3s;
+    background-color: #2e589d;
+}
+
+.quantity {
+    color: #00000099;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.descr1, .descr2 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #4F4F4F;
+    margin: 10px 10px;
+}
+
+.descr1 {
+    font-weight: 400;
+}
+
+.descr2 {
+    font-weight: 700;
+}
+
+.checkout {
+    margin: 24px 0;
+    width: 350px;
+    height: 45px;
+    box-shadow: 0 4px 9px -4px #3B71CA;
+    background: #3B71CA;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+
+.invisible {
+    display: none;
+}
+
+@media screen and (min-width: 100px) and (max-width: 390px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary, .cart {
+        width: 300px;
+    }
+
+    .summary {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkout {
+        width: 280px;
+    }
+
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+    .invisible {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .container2{
+        margin: 10px 0 0 30px;
+        align-items: start;
+    }
+
+    .container1{
+        width: 100%;
+    }
+}
